@@ -1,0 +1,141 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+#app {
+  min-width: 768px;
+}
+
+.header {
+  background-color: #515151;
+  
+  &__link {
+    color: #dcd0ce;
+  }
+}
+.wrap-logo {
+  padding-left: 20px;
+}
+.logo {
+  color: #dcd0ce;
+  padding-top: 8px;
+  display: block;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: #dcd0ce;
+    text-decoration: none;
+  }
+}
+.logo__span {
+  margin-right: 3px;
+  font-size: 25px;
+  color: #ff6347;
+}
+
+.left-sidebar.col-md-auto {
+  padding-right: 0;
+}
+
+.admin-menu__box {
+  width: 235px;
+  height: 100%;
+  background-color: #515151;
+
+  &.show {
+    content: "\f054";
+    font-family: FontAwesome;
+  }
+}
+.admin-menu__btn {
+  /*position: absolute;
+  top: -48px;*/
+  font-size: 24px;
+  border-bottom: 1px solid #585858;
+
+  & button {
+    width: 100%;
+    color: #585858;
+  }
+
+}
+
+.admin-menu__box .nav-link {
+  color: #C4C4C4;
+  border-bottom: 1px solid #585858;
+}
+.admin-menu__parent-link {
+  &.active:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    float: right;
+  }
+  &_parent.active:after {
+    content: none;
+  }
+  &:hover {
+    background-color: #373737
+  }
+
+}
+.admin-menu__parent-link {
+  &.collapsed.active:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    float: right;
+  }
+}
+
+.admin-menu__sub-category {
+  background-color: #444444;
+  &.active {
+    background-color: #515151;
+    position: relative;
+    left: 44px;
+    width: 200px;
+    border-left: 1px solid #585858;
+    z-index: 10;
+  }
+  &__link {
+    padding-left: 33px;
+    color: #c4c4c4;
+
+    &:hover {
+      background-color: #373737;
+    }
+
+    &:visited {
+      color: #c4c4c4;
+    }
+  }
+}
+
+
+/*/////////////////////////////*/
+
+.content {
+  margin-right: 15px;
+}
+.admin-table {
+
+  &__btn_edit {
+    cursor: pointer;
+  }
+}
+
+/*/////////////////////////////*/
+.admin-menu-box div {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.admin-menu__sub {
+  display: none;
+}
+
+.admin-menu__sub_active {
+  display: block;
+}
+
+
